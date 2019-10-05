@@ -27,7 +27,4 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     implementation('com.ts:ts-admin:0.0.1-SNAPSHOT')
-
-//    implementation files('/home/ajay/.m2/repository/com/ts/ts-admin/0.0.2-SNAPSHOT/ts-admin-0.0.2-SNAPSHOT-sources.jar')
-
 }
