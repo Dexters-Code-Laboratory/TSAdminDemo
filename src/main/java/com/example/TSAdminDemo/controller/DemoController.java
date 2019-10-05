@@ -8,11 +8,15 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class DemoController {
 
-    @RequestMapping(value = "hello/", method = RequestMethod.GET)
+    @RequestMapping(value = {"hello", "hello/"}, method = RequestMethod.GET)
     public ModelAndView home() {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("home");
+        modelAndView.setViewName("hello");
         return modelAndView;
     }
 
+    @RequestMapping(value = {"hello2", "hello2/"}, method = RequestMethod.GET)
+    public String hello() {
+        return "hello";
+    }
 }
